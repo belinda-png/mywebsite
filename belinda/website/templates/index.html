@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -311,7 +312,7 @@
 
     <section id="about" aria-label="About Me">
         <div class="about-image" aria-hidden="true">
-            <img src="https://via.placeholder.com/350x350.png?text=Your+Photo" alt="Your Photo" />
+            <img src="{% static 'images/rina.jpg' %}" alt="Rina's Photo" width="350" height="350" />
         </div>
         <div class="about-text">
             <p>Welcome to my personal portfolio! I'm a dedicated web developer with experience in creating responsive, user-friendly websites. I love turning ideas into reality using clean and modern web technologies. When I'm not coding, I enjoy exploring the latest trends in design and technology.</p>
@@ -336,27 +337,6 @@
         <div class="skill">
             <div class="skill-name">Django</div>
             <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
-        </div>
-    </section>
-
-    <section id="projects" aria-label="Projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-title">Portfolio Website</div>
-                <div class="project-description">A responsive portfolio website showcasing my projects and skills, built with HTML, CSS, and Python.</div>
-                <a href="https://github.com/belinda-png" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <div class="project-title">Task Manager App</div>
-                <div class="project-description">A single-page React app for managing daily tasks with a sleek user interface and localStorage data persistence.</div>
-                <a href="https://github.com/belinda-png" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <div class="project-title">Weather Dashboard</div>
-                <div class="project-description">A weather dashboard fetching real-time weather data from a public API, featuring search and geolocation.</div>
-                <a href="https://github.com/belinda-png" target="_blank" rel="noopener" class="project-link">View on GitHub</a>
-            </div>
         </div>
     </section>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
@@ -459,9 +439,3 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
-
-
-
-

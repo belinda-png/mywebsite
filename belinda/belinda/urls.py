@@ -16,13 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from website import views  # assuming 'belinda' is your app and contains views.py
+from website import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('about/', views.about, name='about'),
-    path('projects/', views.projects, name='projects'),
-    path('contact/', views.contact, name='contact'),
 ]
 
